@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.PowerShell.SDK" Version="6.1.1" />
+      <PackageReference Include="OpenLocationCode" Version="1.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="PSOpenLocationCode.dll-Help.xml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="PSOpenLocationCode.psd1">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>
