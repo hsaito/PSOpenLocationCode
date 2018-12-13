@@ -1,6 +1,6 @@
 @{
     RootModule = 'PSOpenLocationCode.dll'
-    ModuleVersion = '1.0.0.0'
+    ModuleVersion = '1.1.0.0'
     FunctionsToExport = @(
     'ConvertTo-OLC'
     'ConvertFrom-OLC'
