@@ -10,7 +10,7 @@
     AliasesToExport = '*'
     GUID = 'd3bdc2ff-d807-4e78-afd1-73821d74d82d'
     Author = 'Hideki Saito'
-    Description = 'Open Location Code Module for PowerShell'
+    Description = 'Open Location Code (also known as Plus codes) Module for PowerShell'
     PowerShellVersion = '6.0'
     CompatiblePSEditions = 'Core'
     Copyright = '(c) 2018 Hideki Saito. All rights reserved.'
