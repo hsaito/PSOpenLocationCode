@@ -2,6 +2,18 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp2.1</TargetFramework>
+        <Authors>Hideki Saito</Authors>
+        <Title>PSOpenLocationCode</Title>
+        <Product>PSOpenLocationCode</Product>
+        <PackageId>PSOpenLocationCode</PackageId>
+        <Description>pen Location Code (also known as Plus codes) Module for PowerShell</Description>
+        <Copyright>Copyright (c) 2018 Hideki Saito</Copyright>
+        <PackageLicenseUrl>https://github.com/google/open-location-code/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageProjectUrl>https://github.com/hsaito/PSOpenLocationCode/</PackageProjectUrl>
+        <Version>1.1.1.0</Version>
+        <AssemblyVersion>1.1.1.0</AssemblyVersion>
+        <FileVersion>1.1.1.0</FileVersion>
+        <LangVersion>latest</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
