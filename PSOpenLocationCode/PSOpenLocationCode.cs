@@ -1,15 +1,17 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Management.Automation;
 using System.Runtime.Serialization;
 using Google.OpenLocationCode;
-using JetBrains.Annotations;
+// ReSharper disable UnusedMember.Global
 
 namespace PSOpenLocationCode
 {
-    [PublicAPI]
     [Cmdlet(VerbsData.ConvertTo, "OLC")]
     [OutputType(typeof(string))]
-    public class ConverToOLC : Cmdlet
+    [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
+    [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Global")]
+    public class ConvertToOLC : Cmdlet
     {
         [ValidateNotNullOrEmpty] [Parameter(Position = 0, Mandatory = true, HelpMessage = "Latitude to convert.", ParameterSetName = "LongCode")]
         [Parameter(Position = 0, Mandatory = true, HelpMessage = "Latitude to convert.", ParameterSetName = "ShortCode")]
@@ -55,10 +57,11 @@ namespace PSOpenLocationCode
         }
     }
 
-    [PublicAPI]
     [Cmdlet(VerbsData.ConvertFrom, "OLC")]
     [OutputType(typeof(CodeArea))]
-    public class ConverFromOLC : Cmdlet
+    [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
+    [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Global")]
+    public class ConvertFromOLC : Cmdlet
     {
         [ValidateNotNullOrEmpty] [Parameter(Position = 0, Mandatory = true, HelpMessage = "OLC code to convert from.", ParameterSetName = "LongCode")]
         [Parameter(Position = 0, Mandatory = true, HelpMessage = "OLC code to convert from.", ParameterSetName ="ShortCode")]
