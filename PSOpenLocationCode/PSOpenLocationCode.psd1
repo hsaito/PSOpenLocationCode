@@ -1,6 +1,6 @@
 @{
     RootModule = 'PSOpenLocationCode.dll'
-    ModuleVersion = '1.1.1.0'
+    ModuleVersion = '1.2.0.0'
     FunctionsToExport = @(
     'ConvertTo-OLC'
     'ConvertFrom-OLC'
@@ -13,11 +13,10 @@
     Description = 'Open Location Code (also known as Plus codes) Module for PowerShell'
     PowerShellVersion = '6.0'
     CompatiblePSEditions = 'Core'
-    Copyright = '(c) 2018 Hideki Saito. All rights reserved.'
+    Copyright = '(c) 2019 Hideki Saito. All rights reserved.'
     PrivateData = @{
         PSData = @{
             ProjectUri = 'https://github.com/hsaito/PSOpenLocationCode/'
-            LicenseUri = 'https://github.com/google/open-location-code/blob/master/LICENSE'
             ReleaseNotes = ''
         }
     }

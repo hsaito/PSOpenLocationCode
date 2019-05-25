@@ -1,7 +1,7 @@
 language: csharp
 solution: PSOpenLocationCode.sln
 mono: none
-dotnet: 2.1.500
+dotnet: 2.2.300
 script:
  - dotnet restore
  - dotnet build
