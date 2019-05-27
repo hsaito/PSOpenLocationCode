@@ -18,7 +18,7 @@
 
     <ItemGroup>
       <PackageReference Include="Microsoft.PowerShell.SDK" Version="6.2.1" />
-      <PackageReference Include="OpenLocationCode" Version="1.0.1" />
+      <PackageReference Include="OpenLocationCode" Version="2.0.1" />
     </ItemGroup>
 
     <PropertyGroup>
