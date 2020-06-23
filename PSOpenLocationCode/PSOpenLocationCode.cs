@@ -50,7 +50,9 @@ namespace PSOpenLocationCode
             
             if (Short)
             {
-                code = code.Shorten(ReferenceLatitude, ReferenceLongitude);
+                var shortenedCode = code.Shorten(ReferenceLatitude, ReferenceLongitude);
+                WriteObject(shortenedCode.Code);
+                return;
             }
             
             WriteObject(code.Code);
@@ -78,14 +80,21 @@ namespace PSOpenLocationCode
         
         protected override void ProcessRecord()
         {
-            var code = new OpenLocationCode(Code);
+            
             
             if (Short)
             {
-                code = code.Recover(ReferenceLatitude, ReferenceLongitude);
+                var code = new OpenLocationCode.ShortCode(Code);
+                var result = code.RecoverNearest(ReferenceLatitude, ReferenceLongitude);
                 WriteVerbose($"Full code: {code.Code}");
+                WriteObject(result.Decode());
+                
             }
-            WriteObject(code.Decode());
+            else
+            {
+                var code = new OpenLocationCode(Code);
+                WriteObject(code.Decode());
+            }
         }
     }
     
