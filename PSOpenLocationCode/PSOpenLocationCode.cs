@@ -116,4 +116,9 @@ namespace PSOpenLocationCode
         {
         }
     }
+
+    public class TestReference
+    {
+        public static string Hello => "Hello from main project";
+    }
 }
