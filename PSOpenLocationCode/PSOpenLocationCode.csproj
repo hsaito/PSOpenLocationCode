@@ -29,6 +29,7 @@
     </PropertyGroup>
     
     <ItemGroup>
+      <PackageReference Include="System.Security.Cryptography.Xml" Version="9.0.15" />
       <None Update="PSOpenLocationCode.dll-Help.xml">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
